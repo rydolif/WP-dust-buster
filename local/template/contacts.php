@@ -49,6 +49,9 @@
 				<div class="form__line">
 					<input type="email" name="mail" placeholder="Email*" required>
 				</div>
+				<div class="form__line">
+					<textarea name="textarea" id="" placeholder="Short description of the object"></textarea>
+				</div>
 				<p class="form__text">
 					By clicking Submit button you agree to the processing of yor personal data
 				</p>

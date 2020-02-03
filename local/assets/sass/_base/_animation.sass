@@ -8,15 +8,61 @@
   
 //   100%
 
-//----------------hover-img---------------
-@keyframes hover
-	0%
-		transform: scale(1)
-	100%
-		transform: scale(1.2)
+.hero__decor
+	svg
 
-@keyframes hover-back
+		&:nth-child(1)
+			animation: decor 41.8s ease-in infinite
+
+		&:nth-child(2)
+			animation: decor 32.8s ease-in infinite
+
+		&:nth-child(3)
+			animation: decor-two 27.8s ease-in infinite
+
+		&:nth-child(4)
+			animation: decor 23.8s ease-in infinite
+
+		&:nth-child(5)
+			animation: decor-two 20.8s ease-in infinite
+
+		&:nth-child(6)
+			animation: decor 28.8s ease-in infinite
+
+		&:nth-child(7)
+			animation: decor-two 25.8s ease-in infinite
+
+		&:nth-child(8)
+			animation: decor 39.8s ease-in infinite
+
+
+@keyframes decor
 	0%
-		transform: scale(1.2)
+		top: 20%
+
+	50%
+		top: 100%
+
 	100%
-		transform: scale(1)
+		top: 20%
+
+@keyframes decor-two
+	0%
+		top: 0%
+
+	20%
+		top: 10%
+
+	40%
+		top: -10%
+
+	60%
+		top: -50%
+
+	80%
+		top: 20%
+
+	100%
+		top: 0%
+
+

@@ -114,6 +114,8 @@
 	background-size: contain
 	background-position: center
 	background-repeat: no-repeat
+	overflow: hidden
+	
 
 	&::before
 		content: ''
@@ -124,6 +126,55 @@
 		height: 686px
 		background-color: $blue
 		z-index: -1
+
+	&__decor
+		position: absolute
+		top: 50%
+		left: -2%
+		transform: translate(0, 0)
+		width: 600px
+		height: 400px
+
+		&--two
+			top: 24%
+			left: 90%
+
+		svg
+			position: absolute
+			left: 0
+			top: 0
+
+			&:nth-child(1)
+				width: 50px
+				transform: translate(-20%, 400%)
+
+			&:nth-child(2)
+				width: 40px
+				transform: translate(100%, 120%)
+
+			&:nth-child(3)
+				width: 80px
+				transform: translate(-100%, 10%)
+
+			&:nth-child(4)
+				width: 60px
+				transform: translate(-190%, -150%)
+
+			&:nth-child(5)
+				width: 90px
+				transform: translate(290%, -200%)
+
+			&:nth-child(6)
+				width: 80px
+				transform: translate(120%, -340%)
+
+			&:nth-child(7)
+				width: 55px
+				transform: translate(330%, 90%)
+
+			&:nth-child(8)
+				width: 40px
+				transform: translate(150%, -230%)
 	
 	&__container
 		display: flex
@@ -131,6 +182,7 @@
 
 	&__content
 		max-width: 630px
+		z-index: 3
 
 	&__tel
 		@extend .link
@@ -434,7 +486,7 @@
 .contacts
 	padding:
 		top: 75px
-		bottom: 250px
+		bottom: 320px
 
 	&__container
 		position: relative
@@ -460,6 +512,7 @@
 		top: 10px
 		border-radius: 0
 		max-width: 575px
+		z-index: 111
 
 	&--page
 		padding-bottom: 70px
@@ -684,6 +737,12 @@
 			border-radius: 5px
 
 
+.error-404
+	text-align: center
+	padding: 50px 0
+
+	.btn
+		margin: 15px auto
 
 
 @import "page"
