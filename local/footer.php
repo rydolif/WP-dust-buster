@@ -5,5 +5,7 @@
 
 	<?php wp_footer(); ?>
 
+	<script src="//code.jivosite.com/widget/aFJ24chUnE" async></script>
+
 </body>
 </html>
